@@ -9,7 +9,19 @@ public class SumOfAllSubArrays {
         approach1(a);
         // with prefix sum array
         approach2(a);
+        // final optimized approach using contribution technique
+        approach3(a);
     }
+
+    private static void approach3(int[] a) {
+        long sum = 0;
+        int n = a.length;
+        for(int i=0;i<n;i++){
+             sum = sum+a[i]*(n-i)*(i+1);
+        }
+        System.out.println("Answer : "+sum);
+    }
+
     /*
     * Better approach than Brute force , using prefix sum array and finding the sum of elements with
     * that prefix array
