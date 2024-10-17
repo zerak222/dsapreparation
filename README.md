@@ -12,3 +12,12 @@ Approach:  sum of each element multiplied by its number of occurrences in the su
               =>  arr[i] * (i+1)*(N-i)  
 
 
+
+Sliding Window technique:
+----------------------------
+Q) Given array with n elements and a number k. Find Max subarray sums of length = k.
+Approach : Sliding data , 
+            => Find the sum of array elements of the first sub array of length k. starting from i=0
+            => i=1 , add arr[k+1] to the sum and remove arr[0] for second sub array with length k.
+            => continue this till we reach the end of the array
+            => for every step find the max sum comparing it with existing sum and maintain the max sum value.

@@ -1,6 +1,6 @@
 package org.example.subarrays;
 
-import java.util.Arrays;
+
 
 public class SumOfAllSubArrays {
     public static void main(String[] args) {
@@ -13,6 +13,10 @@ public class SumOfAllSubArrays {
         approach3(a);
     }
 
+    /**
+     * Optimized approach with TC=O(N), Using Contribution technique
+     * @param a
+     */
     private static void approach3(int[] a) {
         long sum = 0;
         int n = a.length;
@@ -24,7 +28,7 @@ public class SumOfAllSubArrays {
 
     /*
     * Better approach than Brute force , using prefix sum array and finding the sum of elements with
-    * that prefix array
+    * that prefix array , TC= O(N^2)
     * */
     private static void approach2(int[] a) {
         // prepare prefix array
