@@ -9,10 +9,10 @@ public class PrefixAndSuffixMaxArray {
         int pfMax[]=new int[n];
         int sfMax[]=new int[n];
 
-        int ele = a[0];
+        int pfEle = a[0];
         for(int i=0;i<n;i++){
-            pfMax[i]=Math.max(ele,a[i]);
-            ele =pfMax[i];
+            pfMax[i]=Math.max(pfEle,a[i]);
+            pfEle =pfMax[i];
         }
         int sfEle = a[n-1];
         for(int i=n-1;i>=0;i--){
