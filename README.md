@@ -21,3 +21,14 @@ Approach : Sliding data ,
             => i=1 , add arr[k+1] to the sum and remove arr[0] for second sub array with length k.
             => continue this till we reach the end of the array
             => for every step find the max sum comparing it with existing sum and maintain the max sum value.
+
+
+Kadanes Algorithm: Maximum sum of a subarray
+--------------------------------------------
+Q)Given an array with n elements , find the sum of subarray which has maximum sum
+Approach: 
+            Maintain two variables
+            1) CurrentMaxSum : Which holds the current max sum value of a sub array.
+            2) Answer : Which holds the maximum sum value.
+    While iterating update the CurrentMaxSum with either CurrentMaxSum+arr[i] or arr[i] whichever is highest
+After every iteration update the Answer to hold maximum of the CurrentMaxSum or the answer.
