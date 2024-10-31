@@ -1,0 +1,35 @@
+SHIFT Operator
+------------------------------
+1) a<<N = a*(2^N)
+2) a>>N = a/(2^N)
+3) 1<<N = 2^N
+4) 1>>N = 1/(2^N)
+
+And , Or ,XOR operator
+------------------------------
+1) odd or even
+   a & 1 = 0 , a is even
+   a & 1 = 1 , a is odd
+2) (a & 0) --> always gives 0
+3) (a & a) --> always gives a
+4) (a | 0) --> always gives a
+5) (a | a) --> always gives a
+6) (a ^ 0) --> always gives a
+7) (a ^ a) --> always gives 0
+
+Commutative Property
+------------------------------
+1) A & B = B & A
+2) A | B = B | A
+3) A ^ B = B ^ A
+4) A & B & C = B & C & A
+
+Associative Property
+------------------------------
+1) (A & B) & C = A & (B & C)
+2) (A | B) | C = A | (B | C)
+3) (A ^ B) ^ C = A ^ (B ^ C)
+
+
+
+
