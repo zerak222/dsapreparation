@@ -1,8 +1,8 @@
 And , Or ,XOR operator
 -----------------------------------
 1) odd or even
-   a & 1 = 0 , a is even
-   a & 1 = 1 , a is odd
+   a & 1 = 0 , a is even  and 0th bit is 0
+   a & 1 = 1 , a is odd   and 0th bit is 1
 2) (a & 0) --> always gives 0
 3) (a & a) --> always gives a
 4) (a | 0) --> always gives a
@@ -37,8 +37,8 @@ SHIFT Operator  ( << , >>)
 Power of LEFT SHIFT Operator (<<)
 -----------------------------------
 1) CHECK BIT
-    a & (1<<i)  = 0 : element is 0
-    a & (1<<i)  = 1 : element is 1
+    a & (1<<i)  = 0 : bit at i is 0
+    else            : bit at i is 1
 
 2) SET BIT
     a | (1<<i) : sets the i th bit to 1
