@@ -1,4 +1,7 @@
-package org.example.linkedlist;
+package org.example.linkedlist.basics;
+
+import org.example.linkedlist.LinkedListUtil;
+import org.example.linkedlist.Node;
 
 public class ReverseLinkedList {
     public static void main(String[] args) {

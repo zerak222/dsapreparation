@@ -1,4 +1,6 @@
-package org.example.linkedlist;
+package org.example.linkedlist.basics;
+
+import org.example.linkedlist.Node;
 
 public class MiddleOfNode {
     public static void main(String[] args) {
